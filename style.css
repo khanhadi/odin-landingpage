@@ -1,11 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
 body {
     margin: 0;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: wheat;
+}
+
+.logo {
+    font-family: 'JetBrains Mono';
+}
+
+.header {
+    display: flex;
+    padding: 10px;
+    background-color: black;
+    color: wheat;
+    justify-content: space-around;
+}
+
+.top {
+    padding: 50px;
+    background-color: gray;
+    display: flex;
+}
+
+.top .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-btn {
+    width: fit-content;
+    padding: 2px 16px;
+    margin-top: 20px;
+    background-color: wheat;
+    border: none;
+    border-radius: 5px;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
 }
 
 .title-image {
     width: 350px;
     height: 200px;
     background-color: black;
+}
+
+.middle {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.sub-title {
+    font-size: 36px;
+    font-weight: 600;
 }
 
 .card-image{
@@ -16,6 +85,7 @@ body {
 
 .cards {
     display: flex;
+    gap: 20px;
 }
 
 .card {
@@ -27,9 +97,31 @@ body {
 
 .bottom {
     background-color: #eee;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: 36px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.quoter {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.contact {
+    padding: 100px;
 }
 
 .footer {
-    color: white;
+    color: wheat;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding: 10px;
 }
