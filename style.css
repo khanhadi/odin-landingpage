@@ -78,21 +78,30 @@ li a {
 }
 
 .card-image{
-    width: 50px;
-    height: 50px;
-    background-color: rgb(0, 0, 0);
+    width: 200px;
+    height: auto;
 }
 
 .cards {
     display: flex;
     gap: 20px;
+    text-align: center;
 }
 
 .card {
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    border-radius: 10%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img {
+    margin-top: auto;
+}
+
+.subtext {
+    margin-top: auto;
 }
 
 .bottom {
