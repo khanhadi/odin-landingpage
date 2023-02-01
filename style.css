@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
 
 body {
+    min-height: 100vh;
     margin: 0;
-    font-family: Roboto;
+    font-family: Raleway, sans-serif;
     font-size: 16px;
+    height: 100vh;
+    background: black url(./images/bg-image.jpeg) no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 0px 0px 1px rgb(0, 0, 0),
+        0px 0px 20px rgb(0, 0, 0),
+        0px 0px 30px #ffb700;
 }
 
 ul {
@@ -20,6 +28,7 @@ li a {
     color: wheat;
 }
 
+
 .logo {
     font-family: 'JetBrains Mono';
 }
@@ -33,28 +42,37 @@ li a {
 }
 
 .top {
-    padding: 50px;
-    background-color: gray;
     display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .top .container {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    padding: 50px;
     display: flex;
     flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
 }
 
+
 .contact-btn {
-    width: fit-content;
-    padding: 2px 16px;
-    margin-top: 20px;
-    background-color: wheat;
-    border: none;
-    border-radius: 5px;
+    all: unset;
+    font-size: 24px;
+    color: rgba(245, 222, 179, 0.9);
 }
 
 .main-title {
     font-size: 48px;
-    font-weight: bold;
+    font-weight: light;
 }
 
 .title-image {
@@ -69,21 +87,25 @@ li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.300);
+    backdrop-filter: blur(5px);
 }
 
 .sub-title {
     font-size: 36px;
+    color: white;
     font-weight: 600;
 }
 
-.card-image{
+.card-image {
     width: 200px;
     height: auto;
 }
 
 .cards {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     text-align: center;
 }
@@ -100,21 +122,16 @@ li a {
     margin-top: auto;
 }
 
-.subtext {
+.card .subtext {
+    color: white;
     margin-top: auto;
-}
-
-.bottom {
-    background-color: #eee;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
 }
 
 .quote {
     font-size: 36px;
     font-weight: 100;
     font-style: italic;
+    color: wheat;
 }
 
 .quoter {
@@ -122,12 +139,23 @@ li a {
     align-self: flex-end;
 }
 
+.bottom {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.300);
+    backdrop-filter: blur(5px);
+}
+
+
+
+
 .contact {
     padding: 100px;
 }
 
 .footer {
-    color: wheat;
+    color: rgba(245, 222, 179, 0.845);
     background-color: black;
     display: flex;
     justify-content: center;
