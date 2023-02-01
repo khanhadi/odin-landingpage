@@ -23,11 +23,20 @@ ul {
     gap: 10px;
 }
 
-li a {
-    text-decoration: none;
-    color: wheat;
+a {
+    all: unset;
+    cursor: pointer;
 }
 
+.button {
+    transition-duration: 0.4s;
+    color: rgba(245, 222, 179, 0.5);
+}
+
+.button:hover {
+    color: rgba(245, 222, 179);
+    cursor: pointer;
+}
 
 .logo {
     font-family: 'JetBrains Mono';
@@ -52,6 +61,7 @@ li a {
 
 .top .container {
     background-color: rgba(0, 0, 0, 0.3);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     padding: 50px;
     display: flex;
@@ -89,6 +99,7 @@ li a {
     align-items: center;
     gap: 50px;
     background-color: rgba(0, 0, 0, 0.300);
+    -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
 }
 
@@ -108,6 +119,8 @@ li a {
     flex-wrap: wrap;
     gap: 20px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
@@ -148,11 +161,31 @@ li a {
 }
 
 
-
-
-.contact {
+#contact {
     padding: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.300);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
 }
+
+.socials {
+    display: flex;
+    gap: 50px;
+}
+
+.social-icon {
+    color: white;
+    width: 35px;
+    height: auto;
+    flex: 0 0 35px;
+}
+
 
 .footer {
     color: rgba(245, 222, 179, 0.845);
